@@ -26,8 +26,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Modules;
 
 var serviceCollection = new ServiceCollection();
-var configuration = new ConfigurationBuilder()
-    .Build();
+var configuration = new ConfigurationBuilder().Build();
 // this will register the modules in topological order, i.e.: FirstDomainModule, FirstAppModule, SecondDomainModule, SecondAppModule, HostModule
 serviceCollection.AddRootModule<HostModule>(configuration);
 
