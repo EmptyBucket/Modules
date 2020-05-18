@@ -4,6 +4,13 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <PackageId>ap.Modules</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Alexey Politov</Authors>
+        <PackageDescription>Library for working with modules. Define services and module dependencies in modules, then register them in DI, this will register them in the correct topological order and avoid double registration</PackageDescription>
+        <RepositoryUrl>https://github.com/EmptyBucket/Modules</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
