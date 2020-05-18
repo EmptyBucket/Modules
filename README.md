@@ -3,7 +3,7 @@ Library for working with modules. Define services and module dependencies in mod
 #### Nuget:
 * https://www.nuget.org/packages/ap.Modules/
 ## Usage
-```cssharp
+```csharp
 var serviceCollection = new ServiceCollection();
 var configuration = new ConfigurationBuilder()
     .Build();
