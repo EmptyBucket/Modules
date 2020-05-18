@@ -5,8 +5,7 @@ Library for working with modules. Define services and module dependencies in mod
 ## Usage
 ```csharp
 var serviceCollection = new ServiceCollection();
-var configuration = new ConfigurationBuilder()
-    .Build();
+var configuration = new ConfigurationBuilder().Build();
 // this will register the modules in topological order, i.e.: FirstDomainModule, FirstAppModule, SecondDomainModule, SecondAppModule, HostModule
 serviceCollection.AddRootModule<HostModule>(configuration);
 
